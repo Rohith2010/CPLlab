@@ -1,12 +1,12 @@
 #include<stdio.h>
-#include<conio.h>
-void main()
+#include<stdlib.h>
+int main()
 {
     int a,b,choice,result;
     printf("\n 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division \n 5. Reminder \n");
-    scanf("\n%d",&choice);
+    scanf("%d",&choice);
     printf("\n enter two numbers\n");
-    scanf("\n%d \n%d",&a,&b);
+    scanf("%d \n%d",&a,&b);
     switch(choice)
     {
         case 1: result=a+b;
@@ -18,7 +18,7 @@ void main()
         case 3: result=a*b;
                 printf("product=%d",result);
                 break;
-        case 4: if(b=0)
+        case 4: if(b==0)
                 {
                     printf("invalid input \n");
                     exit(1);
